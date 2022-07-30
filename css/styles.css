@@ -27,7 +27,7 @@ ul {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--head-color);
 }
 
@@ -63,6 +63,7 @@ body {
 .header-conteiner {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .heder-nav {
@@ -79,14 +80,13 @@ body {
 margin-right: 50px;
 }*/
 
-
 .heder {
   background-color: var(--main-light-color);
-  border-bottom: 1 solid #ECECEC;
+  border-bottom: 1 solid var(--secondary-border-color);
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19; /* identical to box height */
@@ -97,6 +97,8 @@ margin-right: 50px;
 
 .color-logo {
   color: var(--accent-color);
+  display: flex;
+  align-items: center;
 }
 
 .heder-logo {
@@ -203,7 +205,7 @@ a.heder-portfolio {
 }
 
 .benefits-item {
-  width: ((100% - 60px) / 3);
+  width: ((100% - 60px) / 3 );
 }
 
 .img {
@@ -211,7 +213,6 @@ a.heder-portfolio {
   min-width: 100%;
   height: auto;
 }
-
 
 /*-прихований заголовок-*/
 .visually-hidden {
@@ -252,7 +253,7 @@ a.heder-portfolio {
 }
 
 .aktiviti-item {
-  width: ((100% - 90px) / 4);
+  width: ((100% - 90px) / 4 );
 }
 
 .aktiviti-title {
@@ -322,7 +323,6 @@ a.heder-portfolio {
 
 .footer-logo {
   color: #ffffff;
-  
 }
 
 .footer-address:hover,
@@ -381,7 +381,6 @@ a.heder-portfolio {
   letter-spacing: 0.03em;
   color: var(--head-color);
   background-color: var(--secondary-bgr-color);
-  
 }
 
 .portfolio-btn:hover,
@@ -404,14 +403,20 @@ a.heder-portfolio {
 
 .batton-list {
   display: flex;
-  text-align: center;
+  justify-content: center;
   margin-bottom: 50px;
-  gap: 8px;
-
+  column-gap: 8px;
 }
 
 .portfolio-item {
-  width: ((100% - 60px) / 3);
+  width: ((100% - 60px) / 3 );
+}
+
+.portfolio-text {
+  padding: 20px 24px;
+  border-top: transparent;
+  border: 1px solid #eeeeee;
+  max-width: 370px;
 }
 
 .portfolio-title {
