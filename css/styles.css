@@ -43,6 +43,7 @@ body {
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .conteiner {
@@ -57,10 +58,31 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/*------ Шапка сторінки ------*/
+/*------------------------------------------- heder ------*/
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.heder-nav {
+  display: flex;
+}
+
+.heder-list {
+  display: flex;
+  margin-left: auto;
+  column-gap: 50px;
+}
+
+/*.heder-item:not(:last-child) {
+margin-right: 50px;
+}*/
+
 
 .heder {
   background-color: var(--main-light-color);
+  border-bottom: 1 solid #ECECEC;
 }
 
 .logo {
@@ -69,6 +91,8 @@ body {
   font-size: 26px;
   line-height: 1.19; /* identical to box height */
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
 }
 
 .color-logo {
@@ -94,8 +118,8 @@ body {
   color: var(--accent-color);
 }
 
-.heder-link-studia,
-.heder-link-portfolio {
+a.heder-studia,
+a.heder-portfolio {
   color: var(--accent-color);
 }
 
@@ -105,6 +129,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--head-color);
+  padding: 32px 0;
 }
 
 .heder-email,
@@ -121,7 +146,7 @@ body {
 }
 
 /*----- Унікальний контент сторінки -----*/
-/*------------------------ hero ----------------------*/
+/*----------------------------------------------- hero -----*/
 .section-hero {
   background-color: var(--background-color);
   padding: 200px 0;
@@ -138,14 +163,14 @@ body {
   color: var(--main-light-color);
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  max-width: 696px;
   margin-bottom: 30px;
 }
 
 .hero-btn {
   padding: 10px 32px;
   border-radius: 4px;
-  display: inline-block;
+  display: block;
 
   font-family: inherit;
   font-weight: 700;
@@ -159,9 +184,9 @@ body {
   background-color: #2196f3;
   min-width: 216px;
 
-  border: none;
+  border: transparent;
   cursor: pointer;
-  margin-bottom: 0px;
+  margin: 0px auto;
 }
 
 .hero-btn:hover,
@@ -169,7 +194,24 @@ body {
   background-color: #188ce8;
 }
 
-/*-------------- benefits ------------*/
+/*-------------------------------------------- benefits ------------*/
+
+.benefits-list {
+  display: flex;
+  margin-left: auto;
+  column-gap: 30px;
+}
+
+.benefits-item {
+  width: ((100% - 60px) / 3);
+}
+
+.img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 
 /*-прихований заголовок-*/
 .visually-hidden {
@@ -201,7 +243,17 @@ body {
   color: var(--text-color);
 }
 
-/*---------------- aktiviti -----------------*/
+/*--------------------------------------------- aktiviti -----------------*/
+
+.aktiviti-list {
+  display: flex;
+  margin-left: auto;
+  column-gap: 30px;
+}
+
+.aktiviti-item {
+  width: ((100% - 90px) / 4);
+}
 
 .aktiviti-title {
   font-weight: 700;
@@ -209,13 +261,24 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .section-aktiviti {
   padding-top: 0;
 }
 
-/*------------------- team --------------------*/
+/*---------------------------------------------- team --------------------*/
+
+.team-list {
+  display: flex;
+  margin-left: auto;
+  column-gap: 30px;
+}
+
+.team-name {
+  padding: 30px 10px 30px 10px;
+}
 
 .section-team {
   background-color: var(--secondary-bgr-color);
@@ -226,6 +289,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-people {
@@ -234,6 +298,7 @@ body {
   line-height: 1.9; /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .team-specialist {
   font-size: 16px;
@@ -247,14 +312,17 @@ body {
   background-color: var(--main-light-color);
 }
 
-/*-------------------footer--------------------*/
+/*------------------------------------------------footer--------------------*/
 
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   color: #ffffff;
+  
 }
 
 .footer-address:hover,
@@ -277,6 +345,8 @@ body {
   line-height: 1.71; /* or 171% */
   letter-spacing: 0.03em;
   color: var(--main-light-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-email {
@@ -285,6 +355,7 @@ body {
   line-height: 1.71; /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 .footer-tel {
@@ -310,6 +381,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--head-color);
   background-color: var(--secondary-bgr-color);
+  
 }
 
 .portfolio-btn:hover,
@@ -324,6 +396,22 @@ body {
 
 .portfolio-list {
   background-color: var(--main-light-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.batton-list {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 8px;
+
+}
+
+.portfolio-item {
+  width: ((100% - 60px) / 3);
 }
 
 .portfolio-title {
