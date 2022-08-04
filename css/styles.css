@@ -82,7 +82,7 @@ margin-right: 50px;
 
 .heder {
   background-color: var(--main-light-color);
-  border-bottom: 1 solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
 }
 
 .logo {
